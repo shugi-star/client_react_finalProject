@@ -1,0 +1,82 @@
+/* .delete-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    direction: rtl;
+    background: #f4f9ff;
+}
+
+.delete-card {
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.delete-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #1e4a6b;
+    margin-bottom: 20px;
+}
+
+.patient-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.patient-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.delete-btn {
+    background: #e53e3e;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background: #c53030;
+}
+
+.msg {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.msg.success {
+    background: #e6f7f0;
+    color: #276749;
+}
+
+.msg.error {
+    background: #fff5f5;
+    color: #c53030;
+}
+
+.back-btn {
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #2b6cb0;
+    background: transparent;
+    color: #2b6cb0;
+    border-radius: 8px;
+    cursor: pointer;
+} */

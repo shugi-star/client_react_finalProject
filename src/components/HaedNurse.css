@@ -1,0 +1,48 @@
+.head-nurse-page {
+    min-height: 100vh;
+    background: linear-gradient(160deg, #e8f4fc 0%, #e6f7f0 45%, #f4f9ff 100%);
+    direction: rtl;
+}
+
+.head-nurse-title {
+    text-align: center;
+    color: #0d47a1;
+    margin: 25px 0;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.head-nurse-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.head-nurse-actions button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: none;
+    border-radius: 12px;
+    padding: 14px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+}
+
+.head-nurse-actions button:first-child {
+    background: linear-gradient(135deg, #1565c0, #0d47a1);
+}
+
+.head-nurse-actions button:last-child {
+    background: linear-gradient(135deg, #009688, #2e7d32);
+}
+
+.head-nurse-actions button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}

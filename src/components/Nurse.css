@@ -1,0 +1,5 @@
+.nurse-page {
+    min-height: 100vh;
+    background: linear-gradient(160deg, #e8f4fc 0%, #e6f7f0 45%, #f4f9ff 100%);
+    direction: rtl;
+}

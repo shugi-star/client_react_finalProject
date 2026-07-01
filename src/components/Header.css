@@ -1,0 +1,106 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 14px 24px;
+    background: #fff;
+    border-bottom: 2px solid #d4ece8;
+    color: #1e4a6b;
+    font-family: "Segoe UI", "Rubik", "Arial Rounded MT Bold", sans-serif;
+    direction: rtl;
+}
+
+.user-area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 14px;
+    flex: 1;
+}
+
+.user-area-title {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #2b6cb0;
+}
+
+.user-icon {
+    font-size: 1.15rem;
+    color: #3aa88a;
+}
+
+.user-icon.crown {
+    color: #d69e2e;
+}
+
+.user-detail {
+    font-size: 0.95rem;
+    color: #4a667a;
+}
+
+.user-detail b {
+    color: #1e4a6b;
+    font-weight: 600;
+}
+
+.user-divider {
+    color: #b8d4e8;
+    font-weight: 300;
+    user-select: none;
+}
+
+.user-role {
+    padding: 4px 12px;
+    border-radius: 999px;
+    background: #e6f7f0;
+    color: #276749;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.logout-btn {
+    flex-shrink: 0;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #14b8a6, #0d9488);
+    color: #fff;
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(13, 148, 136, 0.35);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.logout-btn:hover {
+    background: linear-gradient(135deg, #2dd4bf, #14b8a6);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(13, 148, 136, 0.45);
+}
+
+.logout-btn:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 640px) {
+    .header {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 14px 16px;
+    }
+
+    .user-area {
+        justify-content: center;
+    }
+
+    .logout-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
