@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+# Patient Monitoring System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+A full-stack patient monitoring system designed to help hospital nurses view patients' monitor data in real time through a centralized interface.
 
-In the project directory, you can run:
+The goal of the system is to make patient monitoring information accessible to nurses through a user-friendly interface, helping them view patient-related information and receive real-time monitoring updates.
 
-### `npm start`
+The system consists of three interconnected components:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend:** A React application that provides the user interface for viewing patient information and monitoring data.
+- **Main Backend:** A Node.js and Express server that provides API endpoints for patient, nurse, and bed-related data.
+- **Monitoring Server:** A separate Node.js service that uses WebSockets to support real-time monitoring updates.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Together, these components demonstrate a multi-service architecture that combines frontend development, REST API integration, and real-time communication.
 
-### `npm test`
+## System Architecture
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```text
+               Hospital Nurses
+                      |
+                      v
+                React Frontend
+                 /          \
+                v            v
+           REST API       WebSocket
+                |            |
+                v            v
+          Main Backend   Monitoring Server
+          Node.js/Express  Node.js/Express
+                |
+                v
+        Patient-related data
+```
 
-### `npm run build`
+## Technologies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React
+- JavaScript
+- Node.js
+- Express.js
+- REST APIs
+- WebSockets
+- npm
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Frontend — This Repository
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This repository contains the client-side application built with React.
 
-### `npm run eject`
+The frontend provides the interface through which nurses can interact with the system and view patient-related information and monitoring data supplied by the backend services.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Responsibilities
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Rendering the user interface.
+- Displaying patient-related information.
+- Communicating with backend API endpoints.
+- Connecting to monitoring services where configured.
+- Presenting monitoring updates received from the backend.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Running Locally
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Prerequisites
 
-## Learn More
+- Node.js and npm installed.
+- The project repositories cloned to your computer.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 1. Install Dependencies
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Open a terminal in the `client_react_finalProject` directory and run:
 
-### Code Splitting
+```bash
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 2. Start the Frontend
 
-### Analyzing the Bundle Size
+Run:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+npm start
+```
 
-### Making a Progressive Web App
+The development server will typically be available at:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```text
+http://localhost:3000
+```
 
-### Advanced Configuration
+### 3. Start the Backend Services
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+To use features that depend on server data, start the main backend and the monitoring server as described in their respective README files.
 
-### Deployment
+**Note:** The frontend alone does not provide the complete system functionality. The backend services must be running, and their connection URLs must match the local development configuration.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Future Improvements
 
-### `npm run build` fails to minify
+- Add screenshots of the user interface.
+- Improve automated test coverage.
+- Document frontend components and data flows.
+- Centralize service URLs in environment configuration.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Project Context
+
+This project demonstrates full-stack development and real-time communication in a patient monitoring application concept designed for hospital nursing workflows.
